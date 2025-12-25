@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR SHOP NAME - Premium Canva Templates</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a1128 0%, #1e3a5f 50%, #0a1128 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 17, 40, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #d4af37;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 35px;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 5% 80px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(30, 58, 95, 0.4) 0%, rgba(10, 17, 40, 0.8) 100%);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 24px;
+            color: #d4af37;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .cta-btn {
+            background: #d4af37;
+            color: #0a1128;
+            padding: 16px 45px;
+            border: none;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            background: #f4d03f;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 60px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #d4af37;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            padding: 80px 5% 50px;
+        }
+
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 600;
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        /* Products Grid */
+        .products-section {
+            padding: 0 5% 80px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: rgba(30, 58, 95, 0.3);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(212, 175, 55, 0.6);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8f 100%);
+        }
+
+        .product-info {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .product-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .product-description {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .product-price {
+            font-size: 28px;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .buy-btn {
+            background: transparent;
+            border: 2px solid #d4af37;
+            color: #d4af37;
+            padding: 12px 35px;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .buy-btn:hover {
+            background: #d4af37;
+            color: #0a1128;
+        }
+
+        /* Features */
+        .features {
+            background: rgba(30, 58, 95, 0.2);
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: #d4af37;
+            margin-bottom: 60px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .feature p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 30px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 25px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social-links a:hover {
+            border-color: #d4af37;
+            background: rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(10, 17, 40, 0.9);
+            padding: 40px 5%;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .footer-note {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .hero .subtitle { font-size: 18px; }
+            nav { display: none; }
+            .stats { flex-direction: column; gap: 30px; }
+            .products-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">YOUR SHOP NAME</div>
+        <nav>
+            <a href="#products">SHOP</a>
+            <a href="#features">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Elevate Your Brand With<br>Premium Templates</h1>
+        <p class="subtitle">Professionally Crafted Canva Designs</p>
+        <p>Transform your business with stunning, ready-to-use templates.<br>Save hours of design work and stand out from the competition.</p>
+        <a href="#products" class="cta-btn">Shop Now</a>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Premium Templates</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <div class="section-title" id="products">
+        <h2>Explore Our Collection</h2>
+        <p>Handcrafted templates designed for modern businesses</p>
+    </div>
+
+    <section class="products-section">
+        <div class="products-grid">
+            
+            <!-- PRODUCT 1 - EDIT THIS -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop" alt="Template" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Social Media Bundle</h3>
+                    <p class="product-description">30 Instagram post templates designed for coaches and consultants</p>
+                    <div class="product-price">$24.99</div>
+                    <a href="mailto:YOUREMAIL@example.com?subject=Purchase: Social Media Bundle&body=I would like to purchase this template pack" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- PRODUCT 2 - EDIT THIS -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop" alt="Template" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Business Proposal Kit</h3>
+                    <p class="product-description">Professional proposal templates to win more clients</p>
+                    <div class="product-price">$19.99</div>
+                    <a href="mailto:YOUREMAIL@example.com?subject=Purchase: Business Proposal&body=I would like to purchase this template pack" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3 - EDIT THIS -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&h=300&fit=crop" alt="Template" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Content Planner 2026</h3>
+                    <p class="product-description">Complete year planner for content creators</p>
+                    <div class="product-price">$15.99</div>
+                    <a href="mailto:YOUREMAIL@example.com?subject=Purchase: Content Planner&body=I would like to purchase this template pack" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- PRODUCT 4 - EDIT THIS -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&h=300&fit=crop" alt="Template" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Instagram Reels Covers</h3>
+                    <p class="product-description">50 modern, bold Reels cover templates</p>
+                    <div class="product-price">$22.99</div>
+                    <a href="mailto:YOUREMAIL@example.com?subject=Purchase: Reels Covers&body=I would like to purchase this template pack" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- PRODUCT 5 - EDIT THIS -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop" alt="Template" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Invoice Templates</h3>
+                    <p class="product-description">Professional invoicing suite for freelancers</p>
+                    <div class="product-price">$12.99</div>
+                    <a href="mailto:YOUREMAIL@example.com?subject=Purchase: Invoice Templates&body=I would like to purchase this template pack" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- PRODUCT 6 - EDIT THIS -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=300&fit=crop" alt="Template" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Fitness Client Kit</h3>
+                    <p class="product-description">Complete client management system for trainers</p>
+                    <div class="product-price">$18.99</div>
+                    <a href="mailto:YOUREMAIL@example.com?subject=Purchase: Fitness Kit&body=I would like to purchase this template pack" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <h2>Why Choose Our Templates?</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">⬇️</div>
+                <h3>Instant Download</h3>
+                <p>Get your templates immediately after purchase. No waiting, no hassle.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✨</div>
+                <h3>Premium Quality</h3>
+                <p>Professionally designed templates that make your brand look exceptional.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎨</div>
+                <h3>Fully Customizable</h3>
+                <p>Easy to edit in Canva with your own branding, colors, and content.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch</h2>
+        <p>Questions about our templates? We're here to help.</p>
+        <div class="social-links">
+            <a href="mailto:YOUREMAIL@example.com">
+                <span>📧</span>
+                <span>Email Us</span>
+            </a>
+            <a href="https://instagram.com/YOURHANDLE" target="_blank">
+                <span>📷</span>
+                <span>Instagram</span>
+            </a>
+            <a href="https://youtube.com/@YOURHANDLE" target="_blank">
+                <span>🎥</span>
+                <span>YouTube</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 YOUR SHOP NAME. All Rights Reserved.</p>
+        <p class="footer-note">Digital products are non-refundable after download.</p>
+    </footer>
+
+</body>
+</html>
